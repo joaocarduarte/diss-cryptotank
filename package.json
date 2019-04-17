@@ -1,0 +1,29 @@
+{
+  "name": "diss-cryptotank",
+  "version": "1.0.0",
+  "description": "cold-start and low trading volume solution",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaocarduarte/diss-cryptotank.git"
+  },
+  "author": "joaocarduarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaocarduarte/diss-cryptotank/issues"
+  },
+  "homepage": "https://github.com/joaocarduarte/diss-cryptotank#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "coinbase": "^2.0.8",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.2-alpha.1",
+    "mysql": "^2.16.0",
+    "node-binance-api": "^0.9.0",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/head.ejs %>
+</head>
+<body>
+    <h1 class="py-5 text-center">Bank's Cryptocurrency Tank</h1>
+
+    <div class="container">
+        <div class="row text-center pb-5">
+            <div class="col-8">
+                <div class="container border">
+                    <h3 class="py-3">Internal stats</h3>
+                    <div class="row">
+                        <div class="col-6 border">
+                                <p> Defined max crypto: <b><%= maxCrypto %> XLM</b></p>
+                                <p> Defined min crypto: <b><%= minCrypto %> XLM</b></p>
+                        </div>
+                        <div class="col-6 border">
+                            <p> Current fiat reserves: <b><%= currentFiat %> €</b></p>
+                            <p> Current crypto reserves: <b><%= currentCrypto %> XLM</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container border">
+                    <h3 class="py-3">External data</h3>
+                    <div class="row">
+                        <div class="col border">
+                                <p> BTC price: <b><%= btcPrice  %> € <small>(at coinbase)</small></b></p>
+                                <p> XLM price: <b><%= xlmPrice  %> BTC </b><small>(at binance)</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <h2>Buy Orders</h2>
+                        <table class="table table-sm table-striped">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Price <small>(€)</small></th>
+                                    <th scope="col">Amount <small>(XLM)</small></th>
+                                    <th scope="col">Total <small>(€)</small></th>
+                                    <th scope="col">Sum <small>(€)</small></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <h2>Sell Orders</h2>
+                        <table class="table table-sm table-striped">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Price <small>(€)</small></th>
+                                    <th scope="col">Amount <small>(XLM)</small></th>
+                                    <th scope="col">Total <small>(€)</small></th>
+                                    <th scope="col">Sum <small>(€)</small></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
